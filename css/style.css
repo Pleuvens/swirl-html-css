@@ -1,37 +1,43 @@
+/* primary : #2ECC71
+   secondary : #F5D76E
+   tertiary : #D64541
+   black & white
+*/
+
 html, body {
     width: 100%;
     height: 100%;
-}
-
-.container-fluid,
-.row-fluid {
-    height: inherit;
-}
-
-.header {
-    height: 75%;
-    background-image:url('../assets/png/background_light.jpg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.header * {
-    color: white;
-}
-
-.home {
-    background: #dff9fb;
-    height: 25%;
+    background: #F5D76E;
 }
 
 .navbar, .navbar-collapse {
     align-items: unset;
 }
 
-.home-description {
-    text-align: center;
+.navbar *,
+.navbar *:hover {
+    text-decoration: none;
+    color: black;
 }
 
-h1 {
+.home,.header,.nav {
+    background: #2ECC71;
+}
+
+.home-description {
+    text-align: center;
+    height: 100%;
+    background: #3FC380;
+}
+
+.about-image {
+    background: #C0392B;
+}
+
+.about-description {
+    background: #D64541;
+}
+
+h1, h3 {
     text-align: center;
 }

@@ -19,7 +19,7 @@
 
     <body>
         <div class="container-fluid">
-                <div class="header row">
+                <div class="nav row">
                     <nav class="navbar navbar-expand-lg">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -30,26 +30,60 @@
                                     <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                  <a class="nav-link" href="#">About</a>
+                                  <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Work</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Contact</a>
+                                  <a class="nav-link" href="#work">Work</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
+                <div class="header row">
+                    <div class="col-6 mx-auto">
+                            <p><h1>Pleuvens Fervil</h1></p>
+                            <p><h3>Video Game Developer</h3></p>
+                            <p><h3>
+                                <img style="width: 40px; height: 40px;" src="assets/svg/github.svg" />
+                                <img style="width: 40px; height: 40px;" src="assets/svg/itchio.svg" />
+                            </h3></p>
+                            <p><h1>Image + Animation isomere</h1></p>
+                    </div>
+                </div>
                 <div class="home row">
-                    <div class="home-description col-8 mx-auto">
+                    <div class="home-description col-12 mx-auto">
+                        <p><h1>Short description</h1></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
+                </div>
+                <div id="about" class="about row">
+                    <div class="about-image col-6">
+                        <h1>Image + Animation isomere</h1>
+                    </div>
+                    <div class="about-description col-6 mx-auto">
+                        <p><h1>About me</h1></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div id="work" class="work row">
+                    <div class="col-6 mx-auto">
+                        <p><h1>My work</h1></p>
+                    </div>
+                    <!--<div class="card mx-auto" style="width: 18rem; height: 18rem; background: #ff926b;">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>-->
                 </div>
         </div>
     </body>
