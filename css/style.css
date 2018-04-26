@@ -7,7 +7,8 @@
 html, body {
     width: 100%;
     height: 100%;
-    background: #F5D76E;
+    background: #01a3a4;
+    overflow-x: hidden;
 }
 
 .navbar, .navbar-collapse {
@@ -20,24 +21,59 @@ html, body {
     color: black;
 }
 
-.home,.header,.nav {
-    background: #2ECC71;
+.header-wrapper {
+    height: 100vh;
 }
 
 .home-description {
     text-align: center;
-    height: 100%;
-    background: #3FC380;
+    height: 25vh;
 }
 
-.about-image {
-    background: #C0392B;
+.work-box {
+    background: inherit;
 }
 
-.about-description {
-    background: #D64541;
+.footer {
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1519.2px) {
+    .work-box {
+        border-radius: 0;
+        height: 15rem;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 758.4px) and (max-width: 1519.2px) {
+    .work-box {
+        border-radius: 0;
+        height: 15rem;
+        width: 33.3%;
+    }
+}
+
+@media screen and (min-width: 379.2px) and (max-width: 758.4px) {
+    .work-box {
+        border-radius: 0;
+        height: 15rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 379.2px) {
+    .work-box {
+        border-radius: 0;
+        height: 15rem;
+        width: 379px;
+    }
 }
 
 h1, h3 {
     text-align: center;
+}
+
+div {
+    border: 1px solid black;
 }
