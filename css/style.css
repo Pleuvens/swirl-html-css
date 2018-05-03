@@ -1,14 +1,23 @@
 /* primary : #2ECC71
    secondary : #F5D76E
    tertiary : #D64541
-   black & white
+   black & white  
+   #F7F7F4
+   #F1C889
+   #E5A17D
+   #6E92B1
+   #888094
 */
 
 html, body {
     width: 100%;
     height: 100%;
-    background: #01a3a4;
+    background: #F7F7F4;
     overflow-x: hidden;
+}
+
+html * {
+    color: white;
 }
 
 .navbar, .navbar-collapse {
@@ -18,62 +27,109 @@ html, body {
 .navbar *,
 .navbar *:hover {
     text-decoration: none;
-    color: black;
 }
 
 .header-wrapper {
     height: 100vh;
+    margin-left: -15px;
+    margin-right: -15px;
+    background: rgb(17, 17, 17);
+}
+
+.nav {
+    background: rgb(17, 17, 17);
 }
 
 .home-description {
     text-align: center;
     height: 25vh;
+    background: #F7F7F4;
 }
 
-.work-box {
-    background: inherit;
+.home-description * {
+    color: black;
+}
+
+#header-iso {
+    width: 100vw;
+    height: 60vh;
+}
+
+#header-iso {
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.about {
+    background: rgb(17, 17, 17);
+    height: 40vh;
+    width: 100vw;
+}
+
+.about-image {
+    height: inherit;
+    width: 50vw;
+}
+
+#about-iso {
+    width: 100%;
+    height: 100%;
+}
+
+.work {
+    padding-left: 1.5vw;
+}
+
+@media screen and (min-width: 1085px) {
+    .work-box {
+        border: none;
+        background: white;
+        margin: 5vh 1vw 5vh 1vw;
+        width: 22vw;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1085px) and (min-width: 728px) {
+    .work-box {
+        border: none;
+        background: white;
+        margin: 5vh 1vw 5vh 1vw;
+        width: 30vw;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 728px) and (min-width: 400px) {
+    .work-box {
+        border: none;
+        background: white;
+        margin: 5vh 1vw 5vh 1vw;
+        width: 45vw;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .work-box {
+        border: none;
+        background: white;
+        margin: 5vh 1vw 5vh 1vw;
+        width: 97vw;
+        height: 60vh;
+    }
 }
 
 .footer {
     padding-bottom: 30px;
-}
-
-@media screen and (min-width: 1519.2px) {
-    .work-box {
-        border-radius: 0;
-        height: 15rem;
-        width: 25%;
-    }
-}
-
-@media screen and (min-width: 758.4px) and (max-width: 1519.2px) {
-    .work-box {
-        border-radius: 0;
-        height: 15rem;
-        width: 33.3%;
-    }
-}
-
-@media screen and (min-width: 379.2px) and (max-width: 758.4px) {
-    .work-box {
-        border-radius: 0;
-        height: 15rem;
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 379.2px) {
-    .work-box {
-        border-radius: 0;
-        height: 15rem;
-        width: 379px;
-    }
+    background: #111111;
 }
 
 h1, h3 {
     text-align: center;
-}
-
-div {
-    border: 1px solid black;
 }
